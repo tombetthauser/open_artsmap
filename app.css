@@ -73,9 +73,16 @@ li a {
 }
 
 .map-container-div {
-  height: 600px;
-  padding: 25px 25px 75px 25px;
+  padding: 25px 25px 0px 25px;
 }
 .map-container-div > div {
   border: 1px solid black;
+}
+
+.folium-map {
+  min-height: 500px;
+}
+
+.fullpage-map-link {
+  margin-left: 25px;
 }
