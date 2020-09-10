@@ -1,0 +1,54 @@
+
+body {
+  /* filter: invert(1); */
+  background-color: black;
+}
+
+.awesome-marker-shadow {
+  background-image: none;
+  background-color: black;
+  width: 3px !important;
+  position: fixed;
+  left: 9px;
+  box-shadow: 0px 0px 8px rgba(255,255,255,1);
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.awesome-marker-icon-black {
+  opacity: 1;
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 17.5px;
+  padding-top: 3px;
+  background-image: none;
+  height: 35px !important;
+  width: 35px !important;
+  border-radius: 50%;
+  margin-bottom: -10px;
+  bottom: 0;
+  box-shadow: -3px -3px 5px rgba(255,255,255,.5);
+}
+
+.user-title-div {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  width: 150px !important;
+}
+
+#map-key-div {
+  width: 500px !important;
+  height: 500px;
+  background-color: red;
+}
+
+/* .folium-map {
+  max-width: 70%;
+  border-right: 3px solid black;
+} */

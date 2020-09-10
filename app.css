@@ -1,0 +1,71 @@
+
+body {
+  filter: invert(0);
+  background-color: white;
+  padding-top: 50px;
+}
+
+.main-column-div {
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.box-div {
+  font-family: monospace;
+  font-weight: 100;
+  border: 1px solid black;
+  box-shadow: -10px 10px 0 black;
+  padding: 25px 50px;
+  margin-bottom: 50px;
+}
+
+button {
+  border: 1px solid black;
+  box-shadow: -3px 3px 0 rgba(0,0,0,1);
+  font-family: monospace;
+  font-size: 12px;
+  border-radius: 0px;
+  padding: 7.5px 17.5px;
+  background-color: rgba(0,0,0,0);
+  margin: 15px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 35px 0;
+}
+
+ul {
+  /* list-style: none; */
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 5px;
+  color: cornflowerblue;
+}
+
+li a {
+  /* font-weight: 100; */
+  color: cornflowerblue;
+}
+
+.link {
+  /* font-weight: 100; */
+  color: cornflowerblue;
+  display: block;
+  margin: 25px 0;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+.night-mode-div, .night-mode-div::selection {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  background-color: none;
+}
