@@ -2,6 +2,7 @@ body {
   filter: invert(0);
   background-color: white;
   padding-top: 50px;
+  margin-bottom: 100px;
 }
 
 .main-column-div {
@@ -72,8 +73,8 @@ li a {
 }
 
 .map-container-div {
-  height: 500px;
-  padding: 25px;
+  height: 600px;
+  padding: 25px 25px 75px 25px;
 }
 .map-container-div > div {
   border: 1px solid black;
