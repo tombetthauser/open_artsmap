@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📍 Open Arts Map</title>
-  <link rel="stylesheet" href="app.css">
-  <script src="app.js"></script>
-</head>
-<body>
-  <div class="night-mode-div">☼</div>
-  <div class="main-column-div">
-    <div class="box-div">
-      <p>Welcome to the <strong>Open Arts Map</strong> project landing page!</p>
-      <p>
-        An open map resource built to help artists, galleries and arts institutions 
-        find eachother.
-      </p>
-      <hr>
-      <p>
-        If you'd like to have your studio, gallery, collective, arts institution
-        etc. added to the map we have a Google Form set up for the time being.
-        If / when the project gains momentum a public database and api will be set 
-        up to let artists manage their map entry directly and let arts groups
-        use
-      </p>
-      <button>Add Something to the Arts Map!</button>
-      <br>
-      <p>
-        Full-screen city map pages:
-      </p>
-      <ul>
-        <li><a href="./sacramento/index.html">New York, NY</a></li>
-        <li><a href="./sacramento/index.html">Los Angeles, CA</a></li>
-        <li><a href="./sacramento/index.html">San Francisco, CA</a></li>
-        <li><a href="./sacramento/index.html">Sacramento, CA</a></li>
-        <li><a href="./sacramento/index.html">Philadelphia, PA</a></li>
-        <li><a href="./sacramento/index.html">Chicago, IL</a></li>
-        <li><a href="./sacramento/index.html">Houston, TX</a></li>
-        <li><a href="./sacramento/index.html">Miami, FL</a></li>
-      </ul>
+  <head>
+    <!------------- map header start ------------->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><script>L_NO_TOUCH = false;L_DISABLE_3D = false;</script><script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /><link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" /><link rel="stylesheet"href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" /><style>html,body {width: 100%;height: 100%;margin: 0;padding: 0;}</style><style>#map {position: absolute;top: 0;bottom: 0;right: 0;left: 0;}</style><meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><style>#map_5ae719dcabc94cde97bdaad041837059 {position: relative;width: 100.0%;height: 100.0%;left: 0.0%;top: 0.0%;}</style><link rel="stylesheet" href="generator_2.css" />
+    <!-------------- map header end -------------->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📍 Open Arts Map</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+
+  </head>
+  <body>
+    <div class="night-mode-div">☼</div>
+    <div class="main-column-div">
+      <div class="box-div">
+        <p>Welcome to the <strong>Open Arts Map</strong> project landing page!</p>
+        <p>
+          An open map resource built to help artists, galleries and arts institutions 
+          find eachother.
+        </p>
+        <hr>
+        <p>
+          If you'd like to have your studio, gallery, collective, arts institution
+          etc. added to the map we have a Google Form set up for the time being.
+          If / when the project gains momentum a public database and api will be set 
+          up to let artists manage their map entry directly and let arts groups
+          use
+        </p>
+        <button>Add Something to the Arts Map!</button>
+        <br>
+        <p>
+          Full-screen city map pages:
+        </p>
+        <ul>
+          <li><a href="./sacramento/index.html">New York, NY</a></li>
+          <li><a href="./sacramento/index.html">Los Angeles, CA</a></li>
+          <li><a href="./sacramento/index.html">San Francisco, CA</a></li>
+          <li><a href="./sacramento/index.html">Sacramento, CA</a></li>
+          <li><a href="./sacramento/index.html">Philadelphia, PA</a></li>
+          <li><a href="./sacramento/index.html">Chicago, IL</a></li>
+          <li><a href="./sacramento/index.html">Houston, TX</a></li>
+          <li><a href="./sacramento/index.html">Miami, FL</a></li>
+        </ul>
+      </div>
+      <div class="box-div map-container-div">
+        <div class="folium-map" id="map_5ae719dcabc94cde97bdaad041837059"></div>
+      </div>
+      <div class="box-div">
+        <p>
+          This project was developed in Sacramento, CA with support
+          from a group of graduates of the San Francisco Art Institute and
+          the Yale School of Art. The code associated with this project is
+          freely available to run, copy, distribute, study, change and improve
+          via github (link below).
+          <a class="link" href="#">GitHub Repository</a>
+        </p>
+      </div>
     </div>
-    <div class="box-div">
-      <p>
-        This project was developed in Sacramento, CA with support
-        from a group of graduates of the San Francisco Art Institute and
-        the Yale School of Art. The code associated with this project is
-        freely available to run, copy, distribute, study, change and improve
-        via github (link below).
-        <a class="link" href="#">GitHub Repository</a>
-      </p>
-    </div>
-  </div>
-</body>
+  </body>
+
+  <!------------- map js start ------------->
+  <script>var map_5ae719dcabc94cde97bdaad041837059 = L.map("map_5ae719dcabc94cde97bdaad041837059", { center: [38.56893, -121.477], crs: L.CRS.EPSG3857, zoom: 13.4, zoomControl: true, preferCanvas: false, }); var tile_layer_4984588570c44e438c714699d7bab42d = L.tileLayer("https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png", { "attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false }).addTo(map_5ae719dcabc94cde97bdaad041837059); var marker_8c65bf7cbbcc4f41a5b4a08d97686ed9 = L.marker([38.57880830612245, -121.48295526530612], {}).addTo(map_5ae719dcabc94cde97bdaad041837059); var icon_759e3bfa74c34547a859a44e6c1ff328 = L.AwesomeMarkers.icon({ "extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon" }); marker_8c65bf7cbbcc4f41a5b4a08d97686ed9.setIcon(icon_759e3bfa74c34547a859a44e6c1ff328); var popup_c57b5d46ad274b65b24b69a4e1302be4 = L.popup({ "maxWidth": "100%" }); var html_956854dc9b074e4ea75ec5814de9e19a = $(`<div id="html_956854dc9b074e4ea75ec5814de9e19a" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>The Art Studios</h4> 1727 I Street, Sacramento, CA<br><a target='new' href='http://www.theartstudiossacramento.com'>http://www.theartstudiossacramento.com</a></div></div>`)[0]; popup_c57b5d46ad274b65b24b69a4e1302be4.setContent(html_956854dc9b074e4ea75ec5814de9e19a); marker_8c65bf7cbbcc4f41a5b4a08d97686ed9.bindPopup(popup_c57b5d46ad274b65b24b69a4e1302be4); var marker_73591dacfeec494aac001c6732dce550 = L.marker([38.58224180487805, -121.50503099999999], {}).addTo(map_5ae719dcabc94cde97bdaad041837059); var icon_50b9bf87d01a40ef9b3dd6085a45cbbe = L.AwesomeMarkers.icon({ "extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon" }); marker_73591dacfeec494aac001c6732dce550.setIcon(icon_50b9bf87d01a40ef9b3dd6085a45cbbe); var popup_7e9f6c7cf9f3437cae6b5da71bdd54e1 = L.popup({ "maxWidth": "100%" }); var html_1e527a8ad1714ab5b7d43fa0cfb12483 = $(`<div id="html_1e527a8ad1714ab5b7d43fa0cfb12483" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>Artists Collaborative Gallery</h4> 129 K St, Sacramento, CA<br><a target='new' href='http://www.artcollab.com'>http://www.artcollab.com</a></div></div>`)[0]; popup_7e9f6c7cf9f3437cae6b5da71bdd54e1.setContent(html_1e527a8ad1714ab5b7d43fa0cfb12483); marker_73591dacfeec494aac001c6732dce550.bindPopup(popup_7e9f6c7cf9f3437cae6b5da71bdd54e1); var marker_7301a2fbb44340d9845ebec307788e14 = L.marker([38.571783897959186, -121.50262824489796], {}).addTo(map_5ae719dcabc94cde97bdaad041837059); var icon_92f12c429e1245a8b3b97dba62e08b3b = L.AwesomeMarkers.icon({ "extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon" }); marker_7301a2fbb44340d9845ebec307788e14.setIcon(icon_92f12c429e1245a8b3b97dba62e08b3b); var popup_17a083d42d2f4b1ba62e2435ebc235f7 = L.popup({ "maxWidth": "100%" }); var html_2a245b0230e841b1ae992e3cb22d9472 = $(`<div id="html_2a245b0230e841b1ae992e3cb22d9472" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>Axis Gallery</h4> 625 S St, Sacramento, CA<br><a target='new' href='http://www.axisgallery.org'>http://www.axisgallery.org</a></div></div>`)[0]; popup_17a083d42d2f4b1ba62e2435ebc235f7.setContent(html_2a245b0230e841b1ae992e3cb22d9472); marker_7301a2fbb44340d9845ebec307788e14.bindPopup(popup_17a083d42d2f4b1ba62e2435ebc235f7); var marker_4d4e69ae6f484c508f0c23e2d6e3bce7 = L.marker([38.52492412244898, -121.47867110204082], {}).addTo(map_5ae719dcabc94cde97bdaad041837059); var icon_b4862ab003b246a3851f344757f14248 = L.AwesomeMarkers.icon({ "extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon" }); marker_4d4e69ae6f484c508f0c23e2d6e3bce7.setIcon(icon_b4862ab003b246a3851f344757f14248); var popup_2cd25393f7e04dc6acbb3c84b930a58e = L.popup({ "maxWidth": "100%" }); var html_d859c5d098cc4356ba36805a5c1915de = $(`<div id="html_d859c5d098cc4356ba36805a5c1915de" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>Riving Loom Arts</h4> 2741 Fruitridge Rd, Sacramento, CA<br><a target='new' href='@rivingloomarts'>@rivingloomarts</a></div></div>`)[0]; popup_2cd25393f7e04dc6acbb3c84b930a58e.setContent(html_d859c5d098cc4356ba36805a5c1915de); marker_4d4e69ae6f484c508f0c23e2d6e3bce7.bindPopup(popup_2cd25393f7e04dc6acbb3c84b930a58e); var marker_4ff56babcc5d498c90cd457f17cfc428 = L.marker([38.63533026530612, -121.33992075510204], {}).addTo(map_5ae719dcabc94cde97bdaad041837059); var icon_4c5efeefdd1f49798cf650084a9af428 = L.AwesomeMarkers.icon({ "extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon" }); marker_4ff56babcc5d498c90cd457f17cfc428.setIcon(icon_4c5efeefdd1f49798cf650084a9af428); var popup_0b9c066a6bc24081b1244d9e4ab773d5 = L.popup({ "maxWidth": "100%" }); var html_904f6983445f462685b50ef13b155d21 = $(`<div id="html_904f6983445f462685b50ef13b155d21" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>SAC Arts Center</h4> 5330 Gibbons Dr, Carmichael, CA<br><a target='new' href='http://www.sacfinearts.org'>http://www.sacfinearts.org</a></div></div>`)[0]; popup_0b9c066a6bc24081b1244d9e4ab773d5.setContent(html_904f6983445f462685b50ef13b155d21); marker_4ff56babcc5d498c90cd457f17cfc428.bindPopup(popup_0b9c066a6bc24081b1244d9e4ab773d5); var marker_8498c50ba5394c5c82c3d6bcf0c2bdbe = L.marker([38.60865491304348, -121.45947686956521], {}).addTo(map_5ae719dcabc94cde97bdaad041837059); var icon_6a6435e86ba84bedaf3eac253df29bf9 = L.AwesomeMarkers.icon({ "extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon" }); marker_8498c50ba5394c5c82c3d6bcf0c2bdbe.setIcon(icon_6a6435e86ba84bedaf3eac253df29bf9); var popup_2a07865209654448ae1c9471e93d0f91 = L.popup({ "maxWidth": "100%" }); var html_d0e8846ae89d4c72ada7cf755b338b9e = $(`<div id="html_d0e8846ae89d4c72ada7cf755b338b9e" style="width: 100.0%; height: 100.0%;"><div style='width: 300px;'><h4>TGTG (The Garage on the Grove)</h4> 2287 Grove Ave, Sacramento, CA 95815<br><a target='new' href='thegarageonthegrove.com'>thegarageonthegrove.com</a></div></div>`)[0]; popup_2a07865209654448ae1c9471e93d0f91.setContent(html_d0e8846ae89d4c72ada7cf755b338b9e); marker_8498c50ba5394c5c82c3d6bcf0c2bdbe.bindPopup(popup_2a07865209654448ae1c9471e93d0f91);</script>
+  <script src="generator_2.js"></script>
+  <!-------------- map js end -------------->
+
 </html>

@@ -1,4 +1,3 @@
-
 body {
   filter: invert(0);
   background-color: white;
@@ -28,12 +27,13 @@ button {
   border-radius: 0px;
   padding: 7.5px 17.5px;
   background-color: rgba(0,0,0,0);
-  margin: 15px;
+  margin: 25px 0 35px 15px;
   cursor: pointer;
 }
 
 hr {
   margin: 35px 0;
+  border-top: 1px solid black;
 }
 
 ul {
@@ -58,8 +58,9 @@ li a {
   margin: 25px 0;
 }
 
-strong {
+.box-div strong {
   text-decoration: underline;
+  font-weight: 100;
 }
 
 .night-mode-div, .night-mode-div::selection {
@@ -68,4 +69,12 @@ strong {
   top: 10px;
   cursor: pointer;
   background-color: none;
+}
+
+.map-container-div {
+  height: 500px;
+  padding: 25px;
+}
+.map-container-div > div {
+  border: 1px solid black;
 }
